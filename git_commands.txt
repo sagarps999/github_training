@@ -1,0 +1,7 @@
+git init   -- initialize git repository
+git status -- check status of git repo
+git add -- add files from untracked to staged
+git commit -m "message"  -- add message to stage to tracked stage
+git restore   -- restore file from git repo which is not available / deleted from file system
+git rm –cached filename  -- move / return file from stage to untracked
+
