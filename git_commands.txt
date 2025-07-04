@@ -5,3 +5,29 @@ git commit -m "message"  -- add message to stage to tracked stage
 git restore   -- restore file from git repo which is not available / deleted from file system
 git rm –cached filename  -- move / return file from stage to untracked
 
+git push  --- push files from local to github repository
+git remote add origin  <github repo path>
+
+git remote -v  (it will shows as follows -- before connecting to github repo by adding token)
+
+git add .
+git commit -m "message"  (files are added and committed to tracked staged)
+
+when you create repository in local -- name is master but when you create repository in github its name is main
+
+to create token -- go to github, profile setting -- developer options -- token (classic) -- personal access token (classic) -- enter the name for token -- set token expiry -- give access for repo and then create token.
+now copy the provided token and save it.
+
+git remote set-url origin https://<paste token contents>@github.com/........git   (sequence is token contents@github repository link) to check git url run git remote -v command.
+
+now check remote -v it will shows as follows
+
+
+
+git push origin master    -- this will push all files in local filesystem to github repo
+
+fork  --- in github, you can copy / replicate any repository in your github with fork options (fork -- from github to github)
+fork is a copy of repository 
+
+to copy / clone github repository in your local pc / filesystem -- run git clone <git repository address> (copied from github repository clone https link)
+exp == git clone https://github.com/......git  (this will copy files in your local filesystem)
